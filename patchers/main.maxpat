@@ -37,8 +37,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.0, 975.0, 50.0, 58.0 ],
-					"text" : "descriptors sfm 0. 0."
+					"patching_rect" : [ 735.0, 975.0, 264.0, 58.0 ],
+					"text" : "descriptors log_brightness 0. 192000. 0.68 lin_brightness 0. 192000. 0.68 sfm 0. 192000. log_skewness 0. 192000. lin_spread 0. 192000. harmonic_ratio 15 inharmonicity 0.68 pitch 0.68"
 				}
 
 			}
@@ -50,7 +50,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 766.0, 69.0, 1376.0, 850.0 ]
+					"patching_rect" : [ 766.0, 69.0, 1376.0, 850.0 ],
+					"varname" : "DescriptorSelectionInterface"
 				}
 
 			}
@@ -416,20 +417,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 119.5, 1197.0, 125.0, 20.0 ],
 					"text" : "print descriptor_value"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-56",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.0, 1068.0, 98.0, 18.0 ],
-					"text" : "descriptors pitch"
 				}
 
 			}
@@ -863,6 +850,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-208", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-210", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -968,15 +964,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-56", 0 ]
 				}
 
 			}
@@ -1289,6 +1276,13 @@
 				"bootpath" : "/Users/sam/Documents/Projects/SP_FYP/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "DescriptorInterfacePattr.json",
+				"bootpath" : "/Users/sam/Documents/Projects/SP_FYP/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
