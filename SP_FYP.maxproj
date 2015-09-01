@@ -2,7 +2,7 @@
 	"name" : "SP_FYP",
 	"version" : 1,
 	"creationdate" : -771589673,
-	"modificationdate" : -771338109,
+	"modificationdate" : -771270425,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -44,6 +44,16 @@
 		"data" : 		{
 			"FileList.txt" : 			{
 				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"DescriptorInterfacePattr.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"MainPattr.json" : 			{
+				"kind" : "json",
 				"local" : 1
 			}
 

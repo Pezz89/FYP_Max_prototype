@@ -1,0 +1,20 @@
+{
+	"pattrstorage" : 	{
+		"name" : "MainPattr",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"GrainSize" : [ 400.0 ],
+					"Overlap" : [ 4 ],
+					"SampleIndex" : [ 0 ],
+					"DescriptorSelectionInterface::DescriptorInterfacePattr" : [ 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
