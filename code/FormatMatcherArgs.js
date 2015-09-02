@@ -31,7 +31,7 @@ function list(a)
 		
 		for(i=0; i<matcherName.length; i++) 
 		{
-			output = output.concat("{0} {1} ".format(matcherName[i], arguments[i]));
+			output = output.concat("{0} distance {1} ".format(matcherName[i], arguments[i]));
 		}
 		outlet(0, output)
 	}
