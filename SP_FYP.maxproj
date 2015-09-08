@@ -2,9 +2,9 @@
 	"name" : "SP_FYP",
 	"version" : 1,
 	"creationdate" : -771589673,
-	"modificationdate" : -771270425,
+	"modificationdate" : -770484043,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -73,5 +73,9 @@
 
 	}
 ,
-	"detailsvisible" : 0
+	"detailsvisible" : 0,
+	"amxdtype" : 0,
+	"readonly" : 1,
+	"devpathtype" : 0,
+	"devpath" : "."
 }
