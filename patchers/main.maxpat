@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1312.0, 902.0 ],
+		"rect" : [ 34.0, 79.0, 1088.0, 902.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,15 +38,97 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-185",
-					"linecount" : 15,
+					"id" : "obj-152",
+					"linecount" : 10,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 2353.0, 50.0, 210.0 ],
+					"patching_rect" : [ 495.0, 2307.0, 50.0, 143.0 ],
 					"style" : "",
-					"text" : "/Users/sam/.pyenv/shims/python /Users/sam/Documents/Projects/SP_FYP_MAX7/code/test.py 2>&1"
+					"text" : "/Users/sam/Documents/Projects/SP_FYP_MAX7/code/run_python.sh"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-145",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 828.0, 2527.0, 34.0, 22.0 ],
+					"style" : "",
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-142",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 788.0, 2350.0, 181.0, 22.0 ],
+					"style" : "",
+					"text" : "echo $PYTHONPATH 2>&1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 842.0, 2447.0, 82.0, 22.0 ],
+					"presentation_rect" : [ 689.25, 2295.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "append 2>&1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 842.0, 2406.0, 127.0, 22.0 ],
+					"style" : "",
+					"text" : "echo $PYTHONPATH"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 851.945129, 2492.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 689.25, 2338.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "shell"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-185",
+					"linecount" : 11,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 149.0, 2353.0, 50.0, 156.0 ],
+					"style" : "",
+					"text" : "/Users/sam/Documents/Projects/SP_FYP_MAX7/code/run_python.sh 2>&1"
 				}
 
 			}
@@ -65,18 +147,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-182",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 381.25, 2400.0, 47.0, 22.0 ],
-					"style" : "",
-					"text" : "print te"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-181",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -85,19 +155,6 @@
 					"patching_rect" : [ 365.25, 2250.0, 135.0, 22.0 ],
 					"style" : "",
 					"text" : "conformpath slash boot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-180",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 365.25, 2280.0, 231.0, 22.0 ],
-					"style" : "",
-					"text" : "prepend /Users/sam/.pyenv/shims/python"
 				}
 
 			}
@@ -112,9 +169,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 326.25, 2220.0, 97.0, 21.0 ],
+					"patching_rect" : [ 326.25, 2220.0, 136.0, 21.0 ],
 					"style" : "",
-					"text" : "regexp .+/test.py"
+					"text" : "regexp .+/run_python.sh"
 				}
 
 			}
@@ -124,7 +181,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 330.0, 2400.0, 34.0, 22.0 ],
+					"patching_rect" : [ 365.25, 2412.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "print"
 				}
@@ -2565,6 +2622,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-142", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-147", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3148,16 +3223,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-183", 0 ],
+					"destination" : [ "obj-152", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-180", 0 ]
+					"source" : [ "obj-181", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-180", 0 ],
+					"destination" : [ "obj-183", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-181", 0 ]
@@ -3426,15 +3501,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-182", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-35", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3450,6 +3516,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 1148.445068, 1759.400879, 430.945099, 1759.400879 ],
 					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-145", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -3848,6 +3923,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-86", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-87", 0 ]
 				}
 
 			}
