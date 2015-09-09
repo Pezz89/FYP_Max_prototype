@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1852.0, 902.0 ],
+		"rect" : [ 34.0, 79.0, 1355.0, 902.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,31 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 328.0, 2463.0, 419.25, 22.0 ],
+					"style" : "",
+					"text" : "/Users/sam/Documents/Projects/SP_FYP_MAX7/code/run_python.sh 2>&1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-154",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 294.0, 2527.0, 85.0, 22.0 ],
+					"style" : "",
+					"text" : "print shnished"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-92",
 					"maxclass" : "message",
@@ -372,7 +397,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 238.25, 2512.0, 85.0, 22.0 ],
+					"patching_rect" : [ 156.25, 2527.0, 85.0, 22.0 ],
 					"style" : "",
 					"text" : "print UNIXOut"
 				}
@@ -560,7 +585,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 238.25, 2440.0, 35.0, 22.0 ],
+					"patching_rect" : [ 238.25, 2463.0, 35.0, 22.0 ],
 					"style" : "",
 					"text" : "shell"
 				}
@@ -1090,6 +1115,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-112",
@@ -1150,6 +1176,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-105",
@@ -1172,9 +1199,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 751.445129, 25.400927, 229.0, 22.0 ],
+					"patching_rect" : [ 751.445129, 25.400927, 265.0, 22.0 ],
 					"style" : "",
-					"text" : "OSX:/Users/sam/AudioDatabases/Piano/"
+					"text" : "OSX:/Users/sam/AudioDatabases/Piano_mono/"
 				}
 
 			}
@@ -1372,13 +1399,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-53",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 612.445129, 1872.400879, 192.0, 22.0 ],
+					"patching_rect" : [ 612.445129, 1872.400879, 192.0, 35.0 ],
 					"style" : "",
-					"text" : "names sfm noise_ratio confidence"
+					"text" : "names energy confidence pitch rms"
 				}
 
 			}
@@ -1598,7 +1626,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-129",
 					"maxclass" : "number",
-					"maximum" : 1352,
+					"maximum" : 308,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1691,15 +1719,17 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-70",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1704.945068, 544.40094, 161.0, 22.0 ],
+					"patching_rect" : [ 1704.945068, 544.40094, 161.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.25, 202.0, 161.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 270.25, 202.0, 161.0, 35.0 ],
 					"style" : "",
-					"text" : "Piano.ff.B5.aiff"
+					"text" : "Viola.arco.ff.sulA.F5.stereo.mono.aif"
 				}
 
 			}
@@ -1759,7 +1789,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1190.945068, 745.40094, 50.0, 22.0 ],
+					"patching_rect" : [ 1190.945068, 745.40094, 68.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -1985,7 +2015,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 277.445099, 82.400925, 113.0, 22.0 ],
 					"restore" : 					{
-						"GrainSize" : [ 100.0 ],
+						"GrainSize" : [ 30.0 ],
 						"Overlap" : [ 4 ],
 						"SampleIndex" : [ 38 ]
 					}
@@ -2176,13 +2206,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-15",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2544.445068, 1278.400879, 151.0, 22.0 ],
+					"patching_rect" : [ 2544.445068, 1278.400879, 151.0, 35.0 ],
 					"style" : "",
-					"text" : "sfm noise_ratio confidence"
+					"text" : "energy confidence pitch rms"
 				}
 
 			}
@@ -2197,7 +2228,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1885.445068, 1140.400879, 1085.0, 22.0 ],
 					"style" : "",
-					"text" : "descriptors sfm 0. 192000. noise_ratio 15 confidence 0.68"
+					"text" : "descriptors energy 0. 192000. 1 confidence 0.68 pitch 0.68 rms 1"
 				}
 
 			}
@@ -2284,7 +2315,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 270.25, 114.0, 161.0, 22.0 ],
 					"style" : "",
-					"text" : "Piano.pp.Gb7.aiff"
+					"text" : "Piano.pp.Gb7.mono.aiff"
 				}
 
 			}
@@ -2676,9 +2707,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 751.445129, 51.400925, 224.0, 22.0 ],
+					"patching_rect" : [ 751.445129, 51.400925, 258.0, 22.0 ],
 					"style" : "",
-					"text" : "OSX:/Users/sam/AudioDatabases/Viola/"
+					"text" : "OSX:/Users/sam/AudioDatabases/Viola/mono/"
 				}
 
 			}
@@ -3519,6 +3550,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-169", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-183", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3776,6 +3816,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-154", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 1 ]
 				}
 
 			}
