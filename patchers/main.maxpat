@@ -1816,7 +1816,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3330.0, 1095.0, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "sfm noise_ratio pitch rms"
+					"text" : "sfm noise_ratio confidence"
 				}
 
 			}
@@ -1831,7 +1831,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2205.0, 1095.0, 630.0, 22.0 ],
 					"style" : "",
-					"text" : "descriptors sfm 0. 192000. noise_ratio 15 pitch 0.68 rms 1"
+					"text" : "descriptors sfm 0. 192000. noise_ratio 15 confidence 0.68"
 				}
 
 			}
@@ -2846,7 +2846,7 @@
 					"destination" : [ "obj-143", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 177.122604, 789.40094, 299.0, 789.40094, 299.0, 1083.400879, 299.0, 1083.400879, 299.0, 1076.400879, 139.122604, 1076.400879 ],
+					"midpoints" : [ 177.122604, 789.0, 288.0, 789.0, 288.0, 1077.0, 139.122604, 1077.0 ],
 					"source" : [ "obj-156", 1 ]
 				}
 
