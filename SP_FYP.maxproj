@@ -2,7 +2,7 @@
 	"name" : "SP_FYP",
 	"version" : 1,
 	"creationdate" : -771589673,
-	"modificationdate" : -770484043,
+	"modificationdate" : -770243962,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -26,7 +26,12 @@
 				"local" : 1
 			}
 ,
-			"RecursiveFileSearch.maxpat" : 			{
+			"graninfo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"WriteTextData.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -60,6 +65,33 @@
 		}
 ,
 		"externals" : 		{
+			"descriptors~.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"ibuffer~.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"entrymatcher.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"recursivefolder.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"ibufinfo~.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"depack.mxo" : 			{
+				"kind" : "object"
+			}
+,
+			"shell.mxo" : 			{
+				"kind" : "object"
+			}
 
 		}
 

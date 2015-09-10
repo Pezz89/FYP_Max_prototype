@@ -1,1 +1,1 @@
-/Users/sam/AudioDatabases/Viola/mono/Viola.arco.ff.sulA.E6.stereo.mono.aif 1 44100 2950.250 
+/Users/sam/AudioDatabases/IRCAMSamples_mono/sbassoon.mono.aiff 1 44100 6733.742 
