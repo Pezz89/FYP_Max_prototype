@@ -1,1 +1,66 @@
 Final Year Project - Concatenative Corpus Synthesis
+
+INSTALLATION
+============
+To install python package dependencies for this program simply run:
+python setup.py develop
+from the code/ directory of this project on the command line
+
+EXTERNAL DEPENDENCIES
+=====================
+There are a few pre-requisites needed to run this project on OSX.
+
+ - Max Runtime/Max7 trial:
+To run the main Max patch the Max runtime or a Max7 trial (acts the same as the runtime) is required. This can be downloaded here for free:
+https://cycling74.com/max7/
+A full max licence is not required in order to run this patch.
+
+ - Xcode Developer tools:
+The xcode developer tools are a selection of tools provided by apple for software developement and are most likely required for the setup of this package (needs checking)
+to install these tools run xcode-select --install from the terminal
+
+ - Homebrew:
+Though technically not necessary, it is highly recommended that subsequent packages are installed using Homebrew. This OSX package manager makes installing and managing packages far easier and is used for installing all subsequent dependencies.
+
+Install by running:
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+ - Fortran compiler:
+In order to install scientific python packages, a fortran compiler is required.
+The easiest way to obtain this is by running: 
+
+brew install gcc
+
+this will install a local copy of the homebrew package manager and then install a local copy of gcc the most up to date which (unlike OSX's default GCC) comes packaged with the fortran compiler.
+
+ - Libsndfile:
+For audio file IO operations the libsndfile package is needed.
+install using:
+
+brew install libsndfile
+
+ - Python
+Although OSX is packaged with a default Python 2 installation it is highly recommnded to install a copy through either Homebrew or pyenv. The versions installed through these methods are more up-to-date and come with the package managers (pip and easy_install) as standard. pyenv also has the added advantage of allowing for easy switching between versions of Python if needed. They also do not require sudo privelleges for the installing of packages as they installed for just the current user.
+
+To do this simply run:
+brew install python
+
+or
+
+brew install pyenv
+# Installs python version 2.7.10
+pyenv install 2.7.10
+# Sets the global python executable to the installed pyenv version
+pyenv global 2.7.10
+# To return to system python run
+pyenv global system
+
+However the default OSX version can still be used if necessary though it is likely that components such as pip, easy install and setup tools will need to be updated before installing this package.
+
+Example install commands
+========================
+This is a tested list of commands that will get a clean install of OSX 10.10.5 to run the project.
+# Install xcode command line tools
+xcode-select --install
+# Install Homebrew package manager
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

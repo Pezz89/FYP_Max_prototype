@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1852.0, 902.0 ],
+		"rect" : [ 34.0, 79.0, 1043.0, 902.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,54 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 483.445099, 2100.0, 83.0, 22.0 ],
+					"style" : "",
+					"text" : "sprintf %s %s"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 498.695099, 1890.0, 33.0, 22.0 ],
+					"style" : "",
+					"text" : "t s s"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Convert to UNIX style filepath",
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
+					"patching_rect" : [ 645.0, 1935.0, 135.0, 22.0 ],
+					"presentation_rect" : [ 617.445068, 1937.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "conformpath slash boot"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "Bang when shell script finishes",
 					"id" : "obj-96",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 580.0, 2145.0, 24.0, 24.0 ],
+					"patching_rect" : [ 580.0, 2235.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -74,20 +115,6 @@
 					"patching_rect" : [ 45.0, 264.0, 317.0, 22.0 ],
 					"style" : "",
 					"text" : "OSX:/Users/sam/AudioDatabases/IRCAMSamples_mono"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "Input shell command",
-					"id" : "obj-169",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 530.208374, 2100.0, 419.25, 22.0 ],
-					"style" : "",
-					"text" : "/Users/sam/Documents/Projects/SP_FYP_MAX7/code/run_python.sh 2>&1"
 				}
 
 			}
@@ -281,7 +308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.445099, 2055.0, 82.0, 22.0 ],
+					"patching_rect" : [ 483.445099, 2145.0, 82.0, 22.0 ],
 					"style" : "",
 					"text" : "append 2>&1"
 				}
@@ -295,7 +322,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 483.445099, 2025.0, 135.0, 22.0 ],
+					"patching_rect" : [ 483.445099, 2055.0, 135.0, 22.0 ],
 					"style" : "",
 					"text" : "conformpath slash boot"
 				}
@@ -312,7 +339,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 483.445099, 1980.0, 136.0, 21.0 ],
+					"patching_rect" : [ 483.445099, 2010.0, 136.0, 21.0 ],
 					"style" : "",
 					"text" : "regexp .+/run_python.sh"
 				}
@@ -325,7 +352,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 483.445099, 2145.0, 85.0, 22.0 ],
+					"patching_rect" : [ 483.445099, 2235.0, 85.0, 22.0 ],
 					"style" : "",
 					"text" : "print UNIXOut"
 				}
@@ -341,7 +368,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 483.445099, 1935.0, 96.0, 22.0 ],
+					"patching_rect" : [ 483.445099, 1965.0, 96.0, 22.0 ],
 					"style" : "",
 					"text" : "route folder"
 				}
@@ -355,7 +382,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 483.445099, 1905.0, 89.0, 22.0 ],
+					"patching_rect" : [ 483.445099, 1935.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "recursivefolder"
 				}
@@ -415,7 +442,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 483.445099, 2100.0, 35.0, 22.0 ],
+					"patching_rect" : [ 483.445099, 2190.0, 35.0, 22.0 ],
 					"style" : "",
 					"text" : "shell"
 				}
@@ -1290,7 +1317,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-129",
 					"maxclass" : "number",
-					"maximum" : 538,
+					"maximum" : 564,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1392,7 +1419,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 270.25, 202.0, 161.0, 22.0 ],
 					"style" : "",
-					"text" : "sbassoon.mono.aiff"
+					"text" : "sclarinet.mono.aiff"
 				}
 
 			}
@@ -1588,6 +1615,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-42",
@@ -1816,7 +1844,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3330.0, 1095.0, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "sfm noise_ratio confidence"
+					"text" : "pitch"
 				}
 
 			}
@@ -1831,7 +1859,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2205.0, 1095.0, 630.0, 22.0 ],
 					"style" : "",
-					"text" : "descriptors sfm 0. 192000. noise_ratio 15 confidence 0.68"
+					"text" : "descriptors pitch 0.68"
 				}
 
 			}
@@ -2961,10 +2989,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-176", 0 ],
+					"destination" : [ "obj-45", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 508.195099, 1895.0, 492.945099, 1895.0 ],
 					"source" : [ "obj-175", 1 ]
 				}
 
@@ -2974,7 +3001,7 @@
 					"destination" : [ "obj-177", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 492.945099, 1929.0, 492.945099, 1929.0 ],
+					"midpoints" : [ 492.945099, 1959.0, 492.945099, 1959.0 ],
 					"source" : [ "obj-176", 0 ]
 				}
 
@@ -2984,7 +3011,7 @@
 					"destination" : [ "obj-179", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 569.945068, 1964.0, 492.945099, 1964.0 ],
+					"midpoints" : [ 569.945068, 1994.0, 492.945099, 1994.0 ],
 					"source" : [ "obj-177", 1 ]
 				}
 
@@ -2994,7 +3021,7 @@
 					"destination" : [ "obj-181", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 551.445068, 2012.0, 492.945099, 2012.0 ],
+					"midpoints" : [ 551.445068, 2042.0, 492.945099, 2042.0 ],
 					"source" : [ "obj-179", 2 ]
 				}
 
@@ -3010,21 +3037,11 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-183", 0 ],
+					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 492.945099, 2049.0, 492.945099, 2049.0 ],
+					"midpoints" : [ 492.945099, 2079.0, 492.945099, 2079.0 ],
 					"source" : [ "obj-181", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-169", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 492.945099, 2088.0, 939.958374, 2088.0 ],
-					"source" : [ "obj-183", 0 ]
 				}
 
 			}
@@ -3299,7 +3316,7 @@
 					"destination" : [ "obj-96", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 508.945099, 2133.0, 589.5, 2133.0 ],
+					"midpoints" : [ 508.945099, 2223.0, 589.5, 2223.0 ],
 					"source" : [ "obj-35", 1 ]
 				}
 
@@ -3357,6 +3374,45 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 654.5, 2089.0, 556.945068, 2089.0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-176", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 508.195099, 1920.0, 492.945099, 1920.0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 522.195068, 1923.0, 654.5, 1923.0 ],
+					"source" : [ "obj-45", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-183", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -3953,6 +4009,22 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "js",
+				"bootpath" : "~/Documents/Projects/SP_FYP_MAX7/code/lib/python2.7/site-packages/matplotlib/backends/web_backend/jquery",
+				"type" : "fold",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "authorize.js",
+				"bootpath" : "C74:/interfaces/www/js",
+				"type" : "TEXT"
+			}
+, 			{
+				"name" : "welcome-script.js",
+				"bootpath" : "C74:/interfaces/www/js",
+				"type" : "TEXT"
+			}
+, 			{
 				"name" : "Radio2Router.js",
 				"bootpath" : "~/Documents/Projects/SP_FYP_MAX7/code",
 				"type" : "TEXT",
@@ -4006,6 +4078,10 @@
 			}
 , 			{
 				"name" : "ibufinfo~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "js.mxo",
 				"type" : "iLaX"
 			}
 , 			{
