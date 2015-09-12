@@ -1,4 +1,4 @@
-PYTHONPATH="/Users/sam/Documents/Projects/SP_FYP_MAX7/code/pysource"
+PYTHONPATH="$1/code/pysource"
 export PYTHONPATH
 cd $1/code/
 source ./bin/activate

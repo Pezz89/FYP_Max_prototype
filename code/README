@@ -60,7 +60,25 @@ However the default OSX version can still be used if necessary though it is like
 Example install commands
 ========================
 This is a tested list of commands that will get a clean install of OSX 10.10.5 to run the project.
+
 # Install xcode command line tools
 xcode-select --install
 # Install Homebrew package manager
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Install gcc for fortran compilation
+brew install gcc
+# Install libsndfile
+brew install libsndfile
+# Install python via homebrew
+brew install python
+# Download project
+git clone https://github.com/Pezz89/FYP_Max_prototype.git
+cd FYP_Max_prototype
+git submodule update --init --recursive
+cd code/pysource/pysound/
+git checkout dev
+# set up python component of project
+pip install --upgrade pip
+pip install --upgrade setuptools
+pip install ./
+
