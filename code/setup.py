@@ -23,7 +23,7 @@ setup(
     keywords="concatenative synthesis audio",
     url="https://github.com/Pezz89/FYP_Max_prototype",
     packages=find_packages(),
-    setup_requires=['numpy']
-    install_requires=read('requirements.txt'),
+    setup_requires=read('requirements.txt'),
+    install_requires=['numpy'],
     long_description=read('README'),
 )

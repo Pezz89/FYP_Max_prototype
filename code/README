@@ -63,6 +63,9 @@ This is a tested list of commands that will get a clean install of OSX 10.10.5 t
 
 # Install xcode command line tools
 xcode-select --install
+# Download project
+./get_project.sh
+cd FYP_Max_prototype
 # Install Homebrew package manager
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # Install gcc for fortran compilation
@@ -71,12 +74,8 @@ brew install gcc
 brew install libsndfile
 # Install python via homebrew
 brew install python
-# Download project
-git clone https://github.com/Pezz89/FYP_Max_prototype.git
-cd FYP_Max_prototype
-git submodule update --init --recursive
-cd code/pysource/pysound/
-git checkout dev
+# Install freetype package required for matplotlib section of python installation
+brew install freetype
 # set up python component of project
 ./setup_python.sh
 
