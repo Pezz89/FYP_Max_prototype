@@ -78,7 +78,5 @@ git submodule update --init --recursive
 cd code/pysource/pysound/
 git checkout dev
 # set up python component of project
-pip install --upgrade pip
-pip install --upgrade setuptools
-pip install ./
+./setup_python.sh
 
