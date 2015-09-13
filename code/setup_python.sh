@@ -5,4 +5,5 @@ pip install virtualenv
 virtualenv ./
 source ./bin/activate
 pip install numpy
+pip install matplotlib
 pip -v  install -e ./
