@@ -6,4 +6,4 @@ virtualenv ./
 source ./bin/activate
 pip install numpy
 pip install matplotlib
-pip -v  install -e ./
+pip -v  install -e ./pysource/
