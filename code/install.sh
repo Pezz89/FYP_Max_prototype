@@ -1,8 +1,5 @@
 # Install xcode command line tools
 xcode-select --install
-# Download project
-./get_project.sh
-cd FYP_Max_prototype
 # Install Homebrew package manager
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # Install gcc for fortran compilation
