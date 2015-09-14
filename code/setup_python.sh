@@ -6,4 +6,6 @@ virtualenv ./
 source ./bin/activate
 pip install numpy
 pip install matplotlib
-pip -v  install -e ./pysource/
+pip -v install git+https://github.com/pezz89/fileops.git
+pip -v install git+https://github.com/pezz89/pysound.git
+
