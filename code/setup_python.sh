@@ -2,6 +2,8 @@
 pip install --upgrade pip
 pip install --upgrade setuptools
 pip install virtualenv
+# Reload shell to use virtual env executable
+exec $shell
 virtualenv ./
 source ./bin/activate
 pip install numpy
