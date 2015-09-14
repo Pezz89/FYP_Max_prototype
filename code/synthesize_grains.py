@@ -1,6 +1,6 @@
 #from __future__ import division
 import sys
-from pysource import pysound
+import pysound
 from collections import defaultdict
 import numpy as np
 
