@@ -1,1 +1,1 @@
-/Users/sam/AudioDatabases/IRCAMSamples_mono/sclarinet.mono.aiff 1 44100 7055.125 
+/Users/samuelperry/AudioDatabases/IRCAMSamples_mono/sguitar.mono.aiff 1 44100 4954.286 
